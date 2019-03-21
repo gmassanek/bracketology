@@ -142,21 +142,7 @@ def pick_winner(team_1, team_2)
   #better_probs = probability(favorite.seed, underdog.seed)
   game_rand = rand()
 
-  winner = game_rand <= better_probs ? favorite : underdog
-
-  if false#team_1.seed == 2 || team_2.seed == 2
-    puts ""
-    puts "------------"
-    pp favorite
-    pp underdog
-    puts "probability of #{team_1} winning: #{better_probs}"
-    puts game_rand
-    puts "Winner: #{winner}"
-    puts "------------"
-    puts ""
-  end
-
-  winner
+  game_rand <= better_probs ? favorite : underdog
 end
 
 final_four = []
